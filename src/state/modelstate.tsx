@@ -13,12 +13,3 @@ export type Agency = {
     lines: string[]
 }
 
-export type Line = {
-    uid: string,
-    number: string,
-    agencyId: string,
-    name: string,
-    description: string,
-    color: string
-    services: string[]
-}
