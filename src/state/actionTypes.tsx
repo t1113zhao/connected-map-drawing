@@ -4,10 +4,14 @@ export enum ActionTypes {
     EDIT_AGENCY = 'EDIT_AGENCY',
     REMOVE_AGENCY = 'REMOVE_AGENCY',
     
+    SWITCH_AGENCY_FOR_LINE = 'SWITCH_AGENCY_FOR_LINE',
+
     //Line Management Action Types
     ADD_LINE = 'ADD_LINE',
     EDIT_LINE = 'EDIT_LINE',
     REMOVE_LINE = 'REMOVE_LINE',
+
+    SWITCH_LINE_FOR_SERVICE = 'SWITCH_LINE_FOR_SERVICE',
 
     //Service Management Action Types
     ADD_SERVICE = 'ADD_SERVICE',
