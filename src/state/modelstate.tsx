@@ -15,15 +15,7 @@ export type Transfer = {
     type: TransferType
 }
 
-type LatLngPair = [LatLng, LatLng]
-
-export type Track = {
-    uid: string,
-    number: string,
-    stationPair: StationPair,
-    stationNodes: LatLngPair,
-    nodes: LatLng[]
-}
+export type LatLngPair = [LatLng, LatLng]
 
 export type Agency = {
     uid: string,
