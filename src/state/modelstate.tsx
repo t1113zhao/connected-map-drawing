@@ -4,12 +4,5 @@ import {StateIdType} from './uids'
 
 export type LatLngPair = [LatLng, LatLng]
 
-export type Agency = {
-    uid: string,
-    number: string,
-    name: string,
-    description: string,
-    color: string,
-    lines: string[]
 }
 
