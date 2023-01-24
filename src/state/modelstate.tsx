@@ -5,12 +5,12 @@ import {StateIdType} from './uids'
 export type LatLngPair = [LatLng, LatLng]
 
 export type SwitchAgencyForLinePayload = {
-    lineId: string,
+    lineId: string;
     newAgencyId: string
 }
 
 export type SwitchLineForServicePayload = {
-    serviceId: string,
+    serviceId: string;
     newLineId: string
 }
 

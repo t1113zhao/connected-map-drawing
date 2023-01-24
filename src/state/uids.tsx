@@ -12,8 +12,8 @@ export enum StateIdType {
 }
 
 type UidObject = {
-    type: StateIdType,
-    primaryId: string,
+    type: StateIdType;
+    primaryId: string;
     parentId: string | null
 }
 

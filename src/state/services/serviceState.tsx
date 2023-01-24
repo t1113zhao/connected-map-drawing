@@ -1,18 +1,18 @@
 import { StateIdType, UID_SPLITTER} from "../uids"
 
 export type Service = {
-    uid: string,
-    number: string,
-    lineId: string,
-    name: string,
-    description: string,
-    color: string,
-    stopsById: string[],
+    uid: string;
+    number: string;
+    lineId: string;
+    name: string;
+    description: string;
+    color: string;
+    stopsById: string[];
     serviceRouteBlocks: ServiceRouteBlock[]
 }
 
 export type ServiceRouteBlock = {
-    uid: string,
+    uid: string;
     edges: ServiceRouteEdge[]
 } 
 
@@ -45,9 +45,9 @@ export function getServiceIdFromServiceRouteBlockId (uid: string): string | null
 // TODO, get serviceBlockID and serviceRouteEdge from id
 
 export type ServiceRouteEdge = {
-    uid: string,
-    trackId: string,
-    fromStationId: string,
+    uid: string;
+    trackId: string;
+    fromStationId: string;
     toStationId: string
 }
 
@@ -56,38 +56,38 @@ export function getServiceRouteEdgeId(serviceId: string, edge: ServiceRouteEdge)
 }
 
 export type AddServicePayload = {
-    lineId: string,
-    name: string,
-    description: string,
+    lineId: string;
+    name: string;
+    description: string;
     color: string
 }
 
 export type EditServicePayload = {
-    uid: string,
-    name: string,
-    description: string,
+    uid: string;
+    name: string;
+    description: string;
     color: string
 }
 
 export type RemoveServicePayload = {
-    uid: string,
+    uid: string;
     deletedAt: string
 }
 
 export type AppendServiceRouteBlockPayload = {
-    serviceId: string,
-    block: ServiceRouteEdge[],
+    serviceId: string;
+    block: ServiceRouteEdge[];
     appendToBack: boolean // if false append to front
 }
 
 export type RemoveServiceRouteBlockPayload = {
-    serviceId: string,
+    serviceId: string;
     removeFromBack: boolean // if false remove from front
 }
 
 export type AddServiceRouteBlocksPayload = {
-    serviceId: string,
-    blocks: ServiceRouteEdge[][],
+    serviceId: string;
+    blocks: ServiceRouteEdge[][];
 }
 
 export type ClearServiceRouteBlocksPayload = {
@@ -95,7 +95,7 @@ export type ClearServiceRouteBlocksPayload = {
 }
 
 export type ReplaceServiceRouteBlockPayload = {
-    replaceUid: string,
+    replaceUid: string;
     replacementBlock: ServiceRouteEdge[]
 }
 

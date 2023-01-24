@@ -3,15 +3,15 @@ import { LatLngPair } from "../modelstate"
 import { LatLng } from "leaflet"
 
 export type Track = {
-    uid: string,
-    number: string,
-    stationPair: StationPair,
-    stationNodes: LatLngPair,
+    uid: string;
+    number: string;
+    stationPair: StationPair;
+    stationNodes: LatLngPair;
     nodes: LatLng[]
 }
 
 export type AddTrackPayload = {
-    stationPair: StationPair,
+    stationPair: StationPair;
     stationNodes: LatLngPair
 }
 
@@ -20,7 +20,7 @@ export type RemoveTrackPayload = {
 }
 
 export type ReplaceTrackRouteNodes = {
-    uid: string,
+    uid: string;
     newNodes: LatLng[]
 }
 
