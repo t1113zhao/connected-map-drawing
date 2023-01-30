@@ -2,8 +2,8 @@ import { StationPair } from "../stations/stationState"
 import { LatLngPair } from "../modelstate"
 
 export enum TransferType {
-    IN_STATION = "IN_STATION";
-    FREE_OUT_STATION = "FREE_OUT_STATION";
+    IN_STATION = "IN_STATION",
+    FREE_OUT_STATION = "FREE_OUT_STATION",
     PAID_OUT_STATION = "PAID_OUT_STATION"
 }
 
