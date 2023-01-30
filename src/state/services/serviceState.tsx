@@ -1,8 +1,9 @@
+import { StateObject } from "../modelstate";
 import { StateIdType, UID_SPLITTER} from "../uids"
 
-export type Service = {
+export interface Service extends StateObject {
     uid: string;
-    number: string;
+    arrayNum: number;
     lineId: string;
     name: string;
     description: string;

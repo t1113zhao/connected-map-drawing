@@ -6,11 +6,22 @@ export type LatLngPair = [LatLng, LatLng]
 
 export type SwitchAgencyForLinePayload = {
     lineId: string;
-    newAgencyId: string
+    newAgencyId: string;
 }
 
 export type SwitchLineForServicePayload = {
     serviceId: string;
-    newLineId: string
+    newLineId: string;
+}
+
+export interface StateObject {
+    uid: string;
+    arrayNum: number;
+}
+
+export interface StationConnectorStateObject extends StateObject {
+    uid: string;
+    arrayNum: number;
+    stationPair: StationPair;
 }
 

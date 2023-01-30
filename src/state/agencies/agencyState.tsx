@@ -1,17 +1,18 @@
+import { StateObject } from "../modelstate";
 
-export type Agency = {
+export interface Agency extends StateObject {
     uid: string;
-    number: string;
+    arrayNum: number;
     name: string;
     description: string;
     color: string;
-    lines: string[]
+    lines: string[];
 }
 
 export type AddAgencyPayload = {
     name: string;
     description: string;
-    color: string
+    color: string;
 }
 
 export type RemoveAgencyPayload = {

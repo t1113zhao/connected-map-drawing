@@ -1,5 +1,5 @@
 import { StationPair } from "../stations/stationState"
-import { LatLngPair } from "../modelstate"
+import { LatLngPair, StationConnectorStateObject } from "../modelstate"
 
 export enum TransferType {
     IN_STATION = "IN_STATION",
@@ -7,11 +7,10 @@ export enum TransferType {
     PAID_OUT_STATION = "PAID_OUT_STATION"
 }
 
-export type Transfer = {
+export interface Transfer extends StationConnectorStateObject {
     uid: string;
-    number: string;
+    arrayNum: number;
     stationPair: StationPair;
-    stationLatLngs: LatLngPair;
     type: TransferType
 }
 

@@ -1,6 +1,8 @@
-export type Line = {
+import { StateObject } from "../modelstate";
+
+export interface Line extends StateObject {
     uid: string;
-    number: string;
+    arrayNum: number;
     agencyId: string;
     name: string;
     description: string;

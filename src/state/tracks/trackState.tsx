@@ -1,12 +1,11 @@
 import { StationPair } from "../stations/stationState"
-import { LatLngPair } from "../modelstate"
+import { LatLngPair, StationConnectorStateObject } from "../modelstate"
 import { LatLng } from "leaflet"
 
-export type Track = {
+export interface Track extends StationConnectorStateObject {
     uid: string;
-    number: string;
+    arrayNum: number;
     stationPair: StationPair;
-    stationNodes: LatLngPair;
     nodes: LatLng[]
 }
 

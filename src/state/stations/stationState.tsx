@@ -1,14 +1,24 @@
 import {LatLng} from 'leaflet'
+import { StateObject } from '../modelstate';
 
-export type Station = {
+export interface Station extends StateObject {
     uid: string;
-    number: string;
+    arrayNum: number;
     name: string;
     description: string;
     latLng : LatLng
 }
 
-export type StationPair = [string, string]
+export type StationPair = [
+    {
+        uid: string; 
+        latLng : LatLng
+    },
+    {
+        uid: string; 
+        latLng : LatLng
+    }
+]
 
 export type AddStationPayload = {
     name: string;
