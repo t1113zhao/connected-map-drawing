@@ -9,16 +9,7 @@ export interface Station extends StateObject {
     latLng : LatLng
 }
 
-export type StationPair = [
-    {
-        uid: string; 
-        latLng : LatLng
-    },
-    {
-        uid: string; 
-        latLng : LatLng
-    }
-]
+export type StationPair = [Station, Station]
 
 export type AddStationPayload = {
     name: string;
