@@ -2,7 +2,7 @@
 import {ActionTypes, BasicAction, EnhancedAction} from '../actionTypes'
 import * as SS from './stationState'
 import {LatLng} from 'leaflet'
-import { RootState } from '../../store'
+// import { RootState } from '../../store'
 
 // This needs to be given station state, to get the number and uid
 export function addStation(name: string, description: string, latLng: LatLng): BasicAction<SS.AddStationPayload> {
